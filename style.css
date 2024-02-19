@@ -1,8 +1,27 @@
+/* -----/////-----REGOLE DI BASE----//////------ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
 
 
+.conteiner-header{
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 65px;
+}
 
 
-
+button{
+    background-color: none;
+    border: none;
+    font-family: inherit;
+}
 
 
 
@@ -18,3 +37,74 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+
+
+/* -----/////-----HEADER----//////------ */
+header{
+    background-color: #080b12;
+    display: flex;
+    color: #646464;
+    justify-content: space-between;
+}
+
+
+
+/* -----/////-----ASIDE----//////------ */
+
+
+
+
+.header-left .logo{
+height: 40px;
+margin-bottom: 30px;
+margin-top: 18px;
+}
+.header-left ul{
+    list-style: none;
+    
+}
+.header-left ul>li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.header-left h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+.header-left ul li a{
+    color:inherit;
+    text-decoration: none;
+   
+}
+
+.header-left ul li>img{
+    height: 22px;
+}
+.header-left .search-bar>li{
+    margin-bottom: 7px;
+}
+.header-left .playlist-ul>li{
+    margin-bottom: 12px;
+}
+.header-left .add{
+    height: 37px;
+    width: 37px;
+    background-color: #a3a3a3;
+    position: relative;
+}
+.header-left .add>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #080b12;
+    font-size: 25px;
+}
+.lime-bar{
+    border-left: 4px solid #adff2f;
+    
+}
+
