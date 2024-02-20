@@ -25,11 +25,15 @@ img{
 
 .row{
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .col{
-    padding: 0 10px;
+    margin: 0 10px;
+    border: 1px solid coral;
+   
 }
 /* ===== Scrollbar CSS ===== */
 
@@ -80,12 +84,29 @@ body {
   font-style: normal;
 }
 
+
+main h3{
+    font-family: inherit;
+   font-weight: 700 ;
+   color: white;
+}
+
 h2
 {
     color:white ;
     font-family: inherit;
-    font-weight: 800;
+    font-weight: 700;
 }
+main{
+    color: #646464;
+    font-weight: 600;
+}
+
+small{
+    font-weight: 700;
+    font-family: inherit;
+}
+
 /* -----/////-----HEADER----//////------ */
 
 
@@ -252,6 +273,23 @@ main{
 .list-ul ul>li {
    display: flex;
    gap: 10px;
+}
+
+.row .col{
+    width: calc(100% / 6);
+}
+
+.card-text{
+    text-align: center;
+}
+.card-text h3{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.row-text div{
+    padding-top: 10px;
 }
 
 /* -----/////-----FOOTER----//////------ */
