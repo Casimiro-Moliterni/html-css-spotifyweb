@@ -29,6 +29,8 @@ img{
     margin-right: -10px;
     margin-top: 20px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    
 }
 .col{
     margin: 0 10px;
@@ -276,7 +278,7 @@ main{
 }
 
 .row .col{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
 }
 
 .card-text{
@@ -292,6 +294,12 @@ main{
     padding-top: 10px;
 }
 
+.row-last .col .card img{
+    border-radius: 50%;
+}
+
+
+
 /* -----/////-----FOOTER----//////------ */
 footer{
    height: 90px;
@@ -302,9 +310,35 @@ footer{
 
 
 /* ----////MEDIA QUIRY-----//// */
-@media screen and (max-width: 1100px) {}
-@media screen and (max-width: 700px) {}
+/* ---/// media md \\\--- */
+@media screen and (max-width: 1100px) {
+    
+    .row .col{
+        width: calc(100% / 4 -  20px);
+        margin-bottom: 5px;
+    }
+   
+}
 
+/* ---/// media s \\\--- */
+
+@media screen and (max-width: 700px) {
+    .row .col{
+        width: calc(100% / 2 -  20px);
+        margin-bottom: 5px;
+    }
+    .list-ul li{
+        padding-bottom: 28px;
+    }
+    .list-ul li a {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ---/// media xs \\\--- */
 @media screen and (max-width: 600px) {
     header {
         width: 50px;
