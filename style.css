@@ -20,7 +20,7 @@ img{
     margin-left: 20px;
     margin-right: 30px;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .row{
@@ -342,8 +342,12 @@ footer{
 @media screen and (max-width: 600px) {
     header {
         width: 50px;
+       
     }
-
+.account-bottom{
+    padding-bottom: 5px;
+    padding-top: 0;
+}
     .account-top{
         border: none;
     }
