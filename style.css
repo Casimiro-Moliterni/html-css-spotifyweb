@@ -238,3 +238,28 @@ footer{
 
 
 /* ----////MEDIA QUIRY-----//// */
+@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 50px;
+    }
+
+    .account-top{
+        border: none;
+    }
+    .account-bottom ,
+    .account-top{
+  
+      justify-content: center;
+    }
+
+    .playlist-title, .playlist-ul,
+    .playlist-bt,
+    .nav-svg li>a,
+    .account-bottom h5,
+    .account-top a{
+        display: none;
+    }
+}
