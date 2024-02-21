@@ -503,6 +503,8 @@ footer {
 
 
 
+
+
 .btn-play i{
     background-color: #282828;
     color: white;
@@ -527,6 +529,7 @@ font-size: 10px;
     background-color: #5a5a5a;
     height: 5px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .grey{
@@ -534,8 +537,19 @@ font-size: 10px;
     width: 20%;
     background-color: #c1c1c1;
     border-radius: 20px;
+    animation: animate 180s linear forwards;
 }
 
+
+
+
+@keyframes animate{
+    0%{width: 20%}
+    100%{
+        width: 100%;
+    }
+
+}
 
 .audio{
     display: flex;
