@@ -320,6 +320,7 @@ main{
 
 .card{
     position: relative;
+    cursor: pointer;
 }
 
 .overlay{
@@ -332,9 +333,23 @@ main{
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
+  transition: .5s ease;
 }
+
+.overlay>i{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
+
+.card:hover .overlay {
+    display: block;
+    
+}
+
 
 /* -----/////-----FOOTER----//////------ */
 footer{
