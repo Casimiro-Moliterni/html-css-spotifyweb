@@ -26,7 +26,7 @@ img{
 .conteiner-ft{
     max-width: 100%;
     display: flex;
-   
+   justify-content: space-between;
     height: 100%;
 }
 
@@ -78,9 +78,7 @@ button{
     font-family: inherit;
 }
 
-.btn-account{
 
-}
 
 /* -----/////-----TIPOGRAFY----//////------ */
 /* // <uniquifier>: Use a uniquifier for the class name */
@@ -99,7 +97,9 @@ main h3{
    font-weight: 700 ;
    color: white;
 }
-
+.account-bottom h5{
+    color: white;
+}
 h2
 {
     color:white ;
@@ -168,7 +168,7 @@ header h3{
 }
 header  a,
 .list-ul a{
-    color:#646464;
+    color:#6b6b6b;
     text-decoration: none;
     font-weight: 700;  
     font-size: 13px;
@@ -285,8 +285,14 @@ main{
 }
 .list-ul  ul li a{
     text-decoration: none;
-    color: gray;
+    color: #696b70;
     font-weight: 700;
+    
+}
+
+.list-ul a , 
+header li{
+    position: relative;
 }
 
 .list-ul ul>li {
@@ -294,17 +300,35 @@ main{
    gap: 10px;
 }
 
+.lime-bar{
+    width: 40%;
+    background-color: #adff2f;
+    height: 3px;
+    position: absolute;
+    left: 30px;
+}
+
+.li-lime{
+    border-left: 3px solid #adff2f;
+    margin-left: -16px;
+}
+
+
+
 .row .col{
     width: calc(100% / 6 - 20px);
 }
 
 .card-text{
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .card-text h3{
-    font-size: 14px;
-    padding-top: 10px;
+    font-size: 17px;
+    padding-top: 15px;
     padding-bottom: 5px;
+    font-weight: 800;
 }
 
 .row-text div{
@@ -370,6 +394,8 @@ footer{
     display: flex;
     gap: 10px;
     padding-top: 10px;
+    width: calc(100% / 3);
+
 }
 footer {
     font-weight: 700;
@@ -383,7 +409,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 .album-text div{
     font-size: 14px;
@@ -398,11 +424,11 @@ footer {
 
 
 .time{
-    flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    width: calc(100% / 2)
 }
 
 
@@ -433,7 +459,7 @@ font-size: 10px;
     flex-shrink: 1;
     align-items: center;
     gap: 10px;
-    width: 33%;
+    width: 80%;
 }
 
 .bar-progress{
@@ -449,6 +475,22 @@ font-size: 10px;
 }
 
 
+.audio{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: calc(100% / 3);
+    justify-content: end;
+    flex-shrink: 0;
+}
+
+.audio i{
+color: white;
+font-size:14px ;
+}
+.audio .bar-progress{
+    width: 40%;
+}
 /* ----////MEDIA QUIRY-----//// */
 /* ---/// media md \\\--- */
 @media screen and (max-width: 1100px) {
@@ -479,8 +521,19 @@ font-size: 10px;
         gap: 7px;
     }
     .album-text{
-        margin-right: 20px;
+        margin-right: 10px;
     }
+    .time{
+        flex-grow: 1;
+        padding-left: 25px;
+    }
+    .audio .bar-progress{
+        width: 50%;
+    }
+    .time-played{
+        width: 95%;
+    }
+  
 }
 
 
