@@ -26,12 +26,10 @@ img{
 .conteiner-ft{
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
+   
     height: 100%;
 }
-.conteiner-ft div{
-    border: 1px solid coral;
-}
+
 
 .row{
     display: flex;
@@ -44,7 +42,6 @@ img{
 }
 .col{
     margin: 0 10px;
-    border: 1px solid coral;
    
 }
 /* ===== Scrollbar CSS ===== */
@@ -372,6 +369,7 @@ footer{
 .album-artist{
     display: flex;
     gap: 10px;
+    padding-top: 10px;
 }
 footer {
     font-weight: 700;
@@ -398,6 +396,57 @@ footer {
  color: #878787;
 }
 
+
+.time{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.music-played{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+
+.btn-play i{
+    background-color: #282828;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right:10px ;
+} 
+.time-played small{
+    color:white;
+font-size: 10px;
+}
+.time-played{
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+}
+
+.bar-progress{
+    width: 100%;
+    background-color: #5a5a5a;
+    height: 5px;
+}
+
+.grey{
+    height: 100%;
+    width: 20%;
+    background-color: #c1c1c1;
+}
 
 
 /* ----////MEDIA QUIRY-----//// */
