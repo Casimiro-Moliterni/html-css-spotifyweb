@@ -318,38 +318,45 @@ main{
     border-radius: 50%;
 }
 
-.card{
+.album-img-card{
     position: relative;
     cursor: pointer;
 }
 
+.album-img-card img{
+    display: block;
+}
+
 .overlay{
   position:absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   background-color: rgba(0,0,0,0.5);
   transition: .5s ease;
 }
+
 
 .overlay>i{
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 60px;
     color: white;
 }
 
 .card:hover .overlay {
-    display: block;
+  opacity: 1;
     
 }
 
+.row .album-img-card .overlay{
+    border-radius: 50%;
+}
 
 /* -----/////-----FOOTER----//////------ */
 footer{
