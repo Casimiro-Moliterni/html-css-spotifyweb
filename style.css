@@ -330,7 +330,7 @@ footer{
 }
 
 .card-img img{
-    max-height: fit-content;
+ height: 100%;
 }
 
 /* ----////MEDIA QUIRY-----//// */
