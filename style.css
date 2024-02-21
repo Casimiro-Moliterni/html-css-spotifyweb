@@ -354,7 +354,7 @@ main{
     
 }
 
-.row .album-img-card .overlay{
+.row-last .album-img-card .overlay{
     border-radius: 50%;
 }
 
@@ -373,10 +373,32 @@ footer{
     display: flex;
     gap: 10px;
 }
+footer {
+    font-weight: 700;
+}
 
 .card-img img{
  height: 100%;
 }
+
+.album-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 25px;
+}
+.album-text div{
+    font-size: 14px;
+}
+
+.add-heart{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ color: #878787;
+}
+
+
 
 /* ----////MEDIA QUIRY-----//// */
 /* ---/// media md \\\--- */
@@ -401,6 +423,14 @@ footer{
     }
     .list-ul li a {
         font-size: 14px;
+    }
+    .add-heart{
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+    }
+    .album-text{
+        margin-right: 20px;
     }
 }
 
@@ -446,5 +476,11 @@ footer{
     
     .nav-svg{
         margin-top:7px;
+    }
+    .album-text{
+        margin-right: 10px;
+    }
+    .album-text {
+       width: calc(100% / 3);
     }
     }
