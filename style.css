@@ -199,7 +199,7 @@ header .nav-svg ul li ,
     align-items: center;
     gap: 5px;
     padding-bottom: 7px;
-      
+      position: relative;
 }
 
 header h3{
@@ -352,8 +352,18 @@ header li{
 }
 
 .li-lime{
-    border-left: 3px solid #adff2f;
-    margin-left: -16px;
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    background-color: #adff2f;
+    left: -16px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.block .lime-bar,
+.block .li-lime{
+    opacity: 1;
 }
 
 
@@ -400,7 +410,7 @@ header li{
   bottom: 0;
   z-index: 2;
   background-color: rgba(0,0,0,0.5);
-  transition: .5s ease;
+  transition: 0.1s ;
 }
 
 
@@ -412,15 +422,15 @@ header li{
     font-size: 60px;
     color: white;
 }
-
+.nav-svg li:hover .li-lime,
 .card:hover .overlay ,
 .list-ul a:hover .lime-bar{
   opacity: 1;
     
 }
 
-.list-ul a:checked .lime-bar{
-    display: block;
+.list-ul li>a:checked .lime-bar {
+   color: red;
 }
 
 
@@ -516,12 +526,14 @@ font-size: 10px;
     width: 100%;
     background-color: #5a5a5a;
     height: 5px;
+    border-radius: 20px;
 }
 
 .grey{
     height: 100%;
     width: 20%;
     background-color: #c1c1c1;
+    border-radius: 20px;
 }
 
 
