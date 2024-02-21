@@ -76,9 +76,51 @@ button{
     color: white;
     font-weight: 500;
     font-family: inherit;
+    transition: transform 0.1s;
 }
 
+.nav-svg img:hover,
+.playlist-bt h3:hover,
+.card-text h3:hover,
+.time i:hover,
+.audio i:hover{
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari 3-8 */ 
+    transform: scale(1.1); 
+    cursor: pointer;
 
+}
+
+.btn-trasparent:hover {
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari 3-8 */ 
+    transform: scale(1.1); 
+
+  }
+  .playlist-bt button:hover{
+    background-color: white;
+  }
+
+.nav-svg ul li:hover,
+.nav-svg ul li a:hover,
+.list-ul a:hover,
+.playlist-ul a:hover,
+.playlist-bt a:hover,
+.account-top a:hover,
+.album-text small:hover,
+.album-artist .add-heart i:hover
+{
+    color: white;
+}
+.album-text small:hover{
+    text-decoration: underline;
+}
+
+.nav-svg img {
+    transform: scale(1.1); 
+    -ms-transform: scale(1.0); /* IE 9 */
+    -webkit-transform: scale(1.0); /* Safari 3-8 */ 
+}
 
 /* -----/////-----TIPOGRAFY----//////------ */
 /* // <uniquifier>: Use a uniquifier for the class name */
@@ -301,11 +343,12 @@ header li{
 }
 
 .lime-bar{
-    width: 40%;
+    width: 45%;
     background-color: #adff2f;
     height: 3px;
-    position: absolute;
-    left: 30px;
+    margin: auto;
+    opacity: 0;
+    transition: .3s ease;
 }
 
 .li-lime{
@@ -328,7 +371,7 @@ header li{
     font-size: 17px;
     padding-top: 15px;
     padding-bottom: 5px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .row-text div{
@@ -370,10 +413,17 @@ header li{
     color: white;
 }
 
-.card:hover .overlay {
+.card:hover .overlay ,
+.list-ul a:hover .lime-bar{
   opacity: 1;
     
 }
+
+.list-ul a:checked .lime-bar{
+    display: block;
+}
+
+
 
 .row-last .album-img-card .overlay{
     border-radius: 50%;
@@ -497,7 +547,7 @@ font-size:14px ;
     
     .row .col{
         width: calc(100% / 4 -  20px);
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
    
 }
@@ -533,7 +583,7 @@ font-size:14px ;
     .time-played{
         width: 95%;
     }
-  
+ 
 }
 
 
